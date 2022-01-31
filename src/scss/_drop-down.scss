@@ -1,0 +1,57 @@
+.c-dropdown-total{
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  &:hover{
+    .user-name{
+      color: $color-hover;
+    }
+    .tab-icon{
+      background-image: url("../icon-arrow-hover.svg");
+    }
+  }
+  .user-name{
+    color: $color-main-background;
+    margin: auto;
+    cursor: pointer;
+    &.open{
+      color: $color-hover;
+    }
+  }
+  .tab-icon{
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    background-position: center;
+    background-image: url("../icon-arrow.svg");
+    background-repeat: no-repeat;
+    &.rotate{
+      background-image: url("../icon-arrow-up.svg");
+    }
+  }
+  .dropdown-container{
+    position: absolute;
+    max-width: 200px;
+    max-height: 300px;
+    border-radius: 3px;
+    border: 1px solid $color-hover;
+    background-color: $color-white;
+    right: 3px;
+    top: 30px; 
+    .break{
+      background-color: $color-hover;
+      height: 1px;
+    }
+    .dropdown-option{
+      margin: 4px 0px;
+      color: $color-main-header;
+      padding: 8px 16px;
+      font-weight: 400;
+      font-size: 13px;
+      &:hover{
+        background-color: $color-highlight;
+        cursor: pointer;
+      }
+    }
+  }
+}

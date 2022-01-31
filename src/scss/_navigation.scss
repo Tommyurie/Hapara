@@ -1,0 +1,29 @@
+.c-nav-total{
+  display: flex;
+  justify-content: flex-start;
+  .tab-icon{
+    cursor: pointer;
+    background-image: url("../logo.svg");
+    width: 30px;
+    height: 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15px 15px;
+    &:hover{
+      background-image: url("../hover-logo.svg");
+    }
+  }
+  .tab-value{
+    cursor: pointer;
+    color: $color-main-background;
+    margin: 7px;
+    font-size: 13px;
+    &:hover{
+      color: $color-hover;
+    }
+    &.active{
+      color: $color-hover;
+    }
+    
+  }
+}
